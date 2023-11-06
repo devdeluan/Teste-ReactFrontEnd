@@ -1,0 +1,136 @@
+header {
+    background-color: #edf7f7c7;
+}
+
+.header_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-weight: 500;
+}
+
+
+.menu_barras {
+    display: none;
+    z-index: 1;
+}
+
+.menu_barras>img {
+    width: 50px;
+}
+
+.barras{
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #003063;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    transition: .5s;
+}
+
+.barras::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #003063;
+    position: absolute;
+    top: 12px;
+    transition: .5s;
+}
+
+.barras::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #003063;
+    position: absolute;
+    top: -12px;
+    transition: .5s;
+}
+
+.ativo .barras{
+    transform: rotate(135deg);
+}
+
+.ativo .barras::after{
+    transform: rotate(-270deg);
+    top: 0;
+}
+
+.ativo .barras::before{
+    top: 0;
+}
+
+.header_logo {
+    width: 50%;
+    max-width: 220px;
+}
+
+header nav {
+    max-width: 550px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+header nav>div {
+    justify-content: space-between;
+    width: 65%;
+}
+
+header nav a {
+    color: #003063;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px){
+    /* HEADER */
+    .menu_barras {
+        display: initial;
+    }
+
+    .menu_links {
+
+        position: absolute;
+        left: -300px;
+        overflow-x: hidden;
+        top: 70px;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+        width: auto;
+        z-index: 1;
+        border-radius: 10%;
+        padding: 10px;
+
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .menu_links * {
+        margin: 10px 100px 10px 10px;
+    }
+
+    header nav {
+        width: auto;
+    }
+
+    header nav svg {
+        width: 55px;
+        fill: white;
+    }
+}

@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+}
+
+.main_cadastro {
+font-family: var(--font1);
+width: auto;
+height: auto;
+}
+
+.main_cadastro .container_cad {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_cadastro .cad_conteudo {
+    box-shadow: 10px 10px 70px #e2e1e180;
+    border: 1px solid  rgba(7, 7, 7, 0.979);
+    border-radius: 30px;
+    width: 60vw;
+    max-width: 800px;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    color: #0603b9;
+    margin: 10px 0;
+    font-size: 75%;
+}
+
+.main_cadastro .cad_formulario {
+    width: 40vw;
+    max-width: 40vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_cadastro .cad_linha1_input,
+.main_cadastro .cad_linha2_input {
+    display: flex;
+    margin: 2% 0;
+    justify-content: space-between;
+    gap: 10%
+}
+
+.main_cadastro .cad_linha1_input>div:nth-child(1),
+.main_cadastro .cad_linha2_input>div:nth-child(2) {
+    flex: 1;
+}
+
+.main_cadastro .cad_linha1_input>div:nth-child(2),
+.main_cadastro .cad_linha2_input>div:nth-child(1) {
+    flex: 2;
+}
+
+.main_cadastro label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #020202;
+}
+
+.input_uf {
+    text-transform: uppercase;
+}
+
+.main_cadastro .cad_box_input2>input,
+.main_cadastro .cad_box_input>input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #052786;
+    background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
+    backdrop-filter: blur(15px);
+    color: black;
+    font-size: 16px;
+}
+
+.main_cadastro #cad_select_skill:focus-visible,
+.main_cadastro .cad_box_input2>input:focus-visible,
+.main_cadastro .cad_box_input>input:focus-visible {
+    outline: 0.5px solid rgb(14, 13, 13);
+    border: none;
+}
+
+/* Cor de fundo do autocomplete */
+.main_cadastro input:-webkit-autofill {
+    -webkit-box-shadow: black;
+}
+
+/* Cor do texto do autocomplete */
+.main_cadastro input:-webkit-autofill {
+    -webkit-text-fill-color: black;
+}
+
+.main_cadastro .cad_box_input2>input::placeholder,
+.main_cadastro .cad_box_input>input::placeholder {
+    color: #0a08088c;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main_cadastro .cad_formulario>span {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cad_uf {
+    text-transform: uppercase;
+}
+
+.senha_input {
+    display: flex;
+    justify-content: center;
+}
+
+.main_cadastro .cad_botao {
+    align-self: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 15px 15px 30px #00000066;
+    padding: 7px 40px;
+    background:#020202;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}

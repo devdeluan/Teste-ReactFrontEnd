@@ -1,0 +1,526 @@
+.main_listaEmpresa {
+  display: flex;
+  background-color: #eaf5f5;
+  width: 100%;
+  font-family: var(--font1);
+}
+
+.table__header {
+  margin-top: 2%;
+  width: 100%;
+  height: 10%;
+  background-color: #fff4;
+  padding: 0.8rem 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table__header .input-group {
+  width: 35%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.403);
+  padding: 0 0.8rem;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.table__header .input-group:hover {
+  width: 45%;
+  background-color: #fff8;
+  box-shadow: 0 0.1rem 0.4rem #0002;
+}
+
+.table__header .input-group img {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.table__header .input-group input {
+  width: 100%;
+  padding: 0 0.5rem 0 0.3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+.painel_emp {
+  margin-left: 5%;
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+
+.pesquisar {
+  margin-left: 1%;
+  width: 5%;
+
+  border: none;
+  border-radius: 30%;
+
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tabelaEmp {
+  width: 85vw;
+  margin-top: 5%;
+  margin-left: 3%;
+  border: none;
+  font-size: 100%;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.tabelaEmp td {
+  width: 60vw;
+  padding: 0.2% 1%;
+  display: flex;
+  align-items: center;
+}
+
+.tabelaEmp th {
+  width: 5%;
+  border-radius: 25px 25px 25px 0px;
+}
+
+.tabelaEmp .th_cidade {
+  margin-right: 5%;
+}
+
+.tabelaEmp thead tr {
+  width: 78vw;
+  padding: 1% 0.2%;
+  margin-left: 3%;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+tr {
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+tr.linhaTabela {
+  width: 82vw;
+  height: 10vh;
+}
+
+.tabelaEmp2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+select {
+  width: 10vw;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  color: #000000fb;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  .size1 {
+    font-size: 85%;
+  }
+
+  .size2 {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .size1 {
+    font-size: 75%;
+  }
+
+  .size2 {
+    font-size: 100%;
+  }
+
+  .btnNovoEqpm button {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 1306px) {
+  .btnNovoEqpm button {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .size1 {
+    font-size: 68%;
+  }
+
+  .size2 {
+    font-size: 100%;
+  }
+
+  .btnNovoEqpm button {
+    font-size: 60%;
+  }
+
+  .tabelaEmp {
+    font-size: 80%;
+  }
+  .table__header h1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .size1 {
+    font-size: 58%;
+  }
+
+  .size2 {
+    font-size: 90%;
+  }
+
+  .btnNovoEqpm button {
+    font-size: 50%;
+  }
+
+  .tabelaEmp {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .tabelaEmp td {
+    width: 47px;
+  }
+
+  .tabelaEmp {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .size1 {
+    font-size: 49%;
+  }
+
+  .size2 {
+    font-size: 85%;
+  }
+  .table__header h1 {
+    font-size: 12px;
+  }
+
+  select {
+    font-size: 8px;
+    padding: 4px;
+  }
+
+  .table__header .input-group {
+    width: 25%;
+  }
+
+  .table__header .input-group input {
+    width: 100%;
+    font-size: 8px;
+  }
+  .table__header .input-group img {
+    width: 0.9rem;
+    height: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  .tabelaEmp td {
+    width: 44px;
+  }
+
+  .tabelaEmp {
+    font-size: 68%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabelaEmp td {
+    width: 40px;
+  }
+
+  .tabelaEmp thead tr {
+    font-size: 90%;
+  }
+
+  .menu {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .menu_lateral {
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .menu_conteudo {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .menu_conteudo ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .item_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .item_menu a {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .pagAtual {
+    margin-left: 0;
+    background-color: transparent;
+  }
+
+  .IconAtual {
+    color: #cf4b83;
+  }
+
+  .btnSair {
+    display: none;
+  }
+
+  .btn_expandir {
+    display: none;
+  }
+
+  .size1 {
+    font-size: 55%;
+  }
+
+  .size2 {
+    font-size: 80%;
+  }
+
+  .txt_link {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .espaco2 {
+    margin-top: 0;
+    width: 20%;
+  }
+
+  .painel_emp {
+    height: 85%;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .tabelaEmp td {
+    width: 44px;
+  }
+  .tabelaEmp {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .table__header {
+    flex-direction: column;
+  }
+  select {
+    margin-top: 2%;
+  }
+  .table__header .input-group {
+    margin-top: 2%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tabelaEmp td {
+    width: 40px;
+  }
+  .tabelaEmp {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  tr.linhaTabela {
+    width: 51vw;
+  }
+
+  .tabelaEmp thead tr {
+    width: 51vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tabelaEmp td {
+    width: 35px;
+  }
+  .tabelaEmp {
+    font-size: 45%;
+  }
+  tr.linhaTabela {
+    width: 52vw;
+  }
+
+  .tabelaEmp thead tr {
+    width: 52vw;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  tr.linhaTabela {
+    width: 51vw;
+  }
+  .tabelaEmp thead tr {
+    width: 51vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  tr.linhaTabela {
+    width: 50vw;
+  }
+  .tabelaEmp thead tr {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  tr.linhaTabela {
+    width: 49vw;
+  }
+  .tabelaEmp thead tr {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  tr.linhaTabela {
+    width: 48vw;
+  }
+
+  .tabelaEmp thead tr {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  tr.linhaTabela {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .painel_emp {
+    margin-top: -15%;
+  }
+
+  .tabelaEmp {
+    font-size: 40%;
+  }
+
+  .btnNovoEqpm button {
+    font-size: 35%;
+    width: 25%;
+  }
+  .table__header .input-group {
+    margin-top: 2%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btnNovoEqpm button {
+    width: 70px;
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 430px) {
+  tr.linhaTabela {
+    width: 50vw;
+  }
+  .tabelaEmp thead tr {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  tr.linhaTabela {
+    width: 52vw;
+  }
+  .tabelaEmp thead tr {
+    width: 51vw;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .painel_emp {
+    margin-top: -20%;
+  }
+
+  .tabelaEmp {
+    font-size: 30%;
+  }
+
+  .tabelaEmp thead {
+    font-size: 35%;
+  }
+
+  tr.linhaTabela {
+    width: 49vw;
+  }
+  .tabelaEmp thead tr {
+    width: 48vw;
+  }
+}

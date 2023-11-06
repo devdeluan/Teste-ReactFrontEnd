@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #eaf5f5;
+}
+
+.main_home {
+    justify-content: center;
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.botao {
+    font-family: var(--font1);
+    color: #003063;
+    width: 45%;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.header_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu_barras {
+    display: none;
+    z-index: 1;
+}
+
+.menu_barras>img {
+    width: 50px;
+}
+
+.barras{
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--azulP);
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    transition: .5s;
+}
+
+.barras::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--azulP);
+    position: absolute;
+    top: 12px;
+    transition: .5s;
+}
+
+.barras::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--azulP);
+    position: absolute;
+    top: -12px;
+    transition: .5s;
+}
+
+.ativo .barras{
+    transform: rotate(135deg);
+}
+
+.ativo .barras::after{
+    transform: rotate(-270deg);
+    top: 0;
+}
+
+.ativo .barras::before{
+    /* transform: rotate(90deg); */
+    top: 0;
+}
+
+.header_logo {
+    width: 50%;
+    max-width: 220px;
+}
+
+header nav {
+    max-width: 550px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+header nav>div {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font1);
+}
+
+
+/* BANNER */
+.banner {
+    height: calc(100vh - 80px);
+    min-height: 680px;
+    background-color: #edf7f7c7;
+    background-size: cover;
+    color: #003063;
+    font-family: var(--font1);
+    display: flex;
+    align-items: center;
+}
+
+.banner_conteudo {
+    max-width: 700px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(114.61deg, rgba(255, 255, 255, 0.052) 1.08%, rgba(255, 255, 255, 0.117) 99.26%);
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+}
+
+.banner_slogan_l1 {
+    font-size: 3.625em;
+    font-family: var(--font1);
+}
+
+.banner_slogan_l2 {
+    font-size: 1.5em;
+    max-width: 550px;
+    margin: 50px 0;
+}
+
+.banner_slogan_l3 {
+    font-size: 1.375em;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+.banner_botoes {
+    margin-top: 50px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_botao_cad {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 30px;
+    border: 2px solid #e7d90b;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.banner_botao_emp {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 30px;
+    border: 2px solid #e7d90b;
+    border-radius: 10px;    
+    font-family: var(--font1);
+}
